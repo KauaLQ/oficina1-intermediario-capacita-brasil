@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/brasao_fortaleza.png">
+    <script src="https://kit.fontawesome.com/a264ca8e95.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div class="banner-one">
-            <h1>Bem-vindo</h1>
+            <p>Seja Bem-vindo!</p>
+            <form action="#" method="post">
+                <input type="text" name="search" id="search" placeholder="Pesquise em todo site!" required>
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
         </div>
         <div class="banner-two">
             <figure>
@@ -21,16 +26,16 @@
         <div class="menu">
             <nav>
                 <ul>
-                    <li><a href="#">Publicações</a></li>
+                    <li><a href="#intro">Publicações</a></li>
                     <li><a href="#">Hospitais e Atendimento</a></li>
-                    <li><a href="#">Saúde Alimentar</a></li>
+                    <li><a href="#content">Saúde Alimentar</a></li>
                     <li><a href="#">Ajuda</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <div class="carousel">
+        <div id="intro" class="carousel">
             <div class="carousel-images">
                 <img src="img/vem_saude.png" alt="Vem Saúde Fortaleza">
                 <img src="img/saude_alimentar.png" alt="Saúde Alimentar">
@@ -38,6 +43,18 @@
                 <img src="img/spdm_nordeste.png" alt="SPDM Nordeste">
             </div>
         </div>
+
+        <section id="content" class="content">
+            <div class="text">
+                <h1>A saúde começa com uma alimentação saudável</h1>
+                <hr>
+                <p>A saúde alimentar é um componente fundamental para o bem-estar geral e a prevenção de diversas doenças. Ela se refere ao consumo de uma alimentação equilibrada e nutritiva, que atenda às necessidades do corpo, proporcionando energia, vitaminas, minerais e outros nutrientes essenciais para o funcionamento adequado dos sistemas do organismo.</p>
+                <p>Uma dieta saudável deve ser variada, incluindo alimentos de todos os grupos alimentares: frutas, legumes, verduras, grãos integrais, proteínas magras (como carnes, ovos, leguminosas) e gorduras saudáveis (como azeite de oliva, abacate e nozes). Além disso, é importante controlar a quantidade de alimentos processados, ricos em açúcares, gorduras saturadas e sódio, que podem contribuir para o desenvolvimento de doenças como obesidade, diabetes, hipertensão e doenças cardíacas.</p>
+                <p>A ingestão adequada de água também é um aspecto crucial para a saúde alimentar, pois ela ajuda na digestão, na regulação da temperatura corporal e na eliminação de toxinas. Outro ponto importante é o hábito de realizar refeições regulares, evitando longos períodos de jejum ou excessos alimentares, que podem prejudicar o metabolismo.</p>
+                <p>A prática de atividades físicas e o equilíbrio entre alimentação e exercício são essenciais para manter o peso corporal saudável e melhorar a função metabólica. Ter uma alimentação consciente, onde se faz escolhas informadas sobre o que se consome, também pode ajudar a prevenir deficiências nutricionais e promover a saúde mental e emocional.</p>
+                <p>Por fim, a saúde alimentar não envolve apenas o que comemos, mas também como nos relacionamos com a comida. Manter um equilíbrio, respeitar os sinais do corpo e adotar uma abordagem holística, que leve em consideração os aspectos emocionais e sociais da alimentação, é essencial para uma vida saudável e plena.</p>
+            </div>
+        </section>
     </main>
 </body>
 </html>
