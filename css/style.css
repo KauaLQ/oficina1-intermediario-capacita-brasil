@@ -111,7 +111,6 @@ body main{
     overflow: hidden;
     width: 100%;
     border-radius: 10px;
-    margin-bottom: 40px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     position: relative;
   }
@@ -149,7 +148,8 @@ body main{
 }
 
 .content .text h1{
-    margin-top: 40px;
+    margin-top: 60px;
+    text-align: justify;
 }
 
 .content .text p{
@@ -159,9 +159,77 @@ body main{
     margin-bottom: 15px;
 }
 
+.topic-table{
+    margin-bottom: 15px;
+}
+
+table{
+    max-width: 700px;
+    border-collapse: collapse;
+    background-color: #E9F4F3;
+    font-size: 14px;
+    border-style: hidden;
+    border-radius: 15px;
+}
+
+thead{
+    background-color: #199B91;
+    border-radius: 15px;
+}
+
+th, td{
+    padding: 10px;
+    color: #333333;
+}
+
+.side-bar {
+    border-left: 4px solid #008090;
+    padding-left: 10px;
+    color: #008090;
+    line-height: 1.5;
+}
+
 hr{
     max-width: 700px;
     border: 0;
     border-top: 1px solid rgb(233, 230, 230);
     margin: 20px 0 20px;
 }
+
+footer{
+    width: 100%;
+}
+
+footer .general-footer{
+    display: flex;
+    background-color: #22A296;
+    color: #fff;
+    padding: 40px;
+    align-items: center;
+    justify-content: left;
+    border-bottom: 10px solid #199B91;
+}
+
+footer .general-footer .location, .social{
+    margin-left: 15%;
+}
+
+footer .general-footer .location p{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+footer .general-footer a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .general-footer i{
+    font-size: 200%;
+}
+
+footer .general-footer .social .icons{
+    padding-top: 15px;
+}
+
