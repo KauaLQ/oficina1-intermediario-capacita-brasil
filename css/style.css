@@ -160,6 +160,21 @@ body main{
     margin-bottom: 15px;
 }
 
+.content .text .result{
+    margin-top: 30px;
+}
+
+#IMCNumber{
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#IMCNumber.show{
+    opacity: 1;
+    transform: scale(1);
+}
+
 .topic-table{
     margin-bottom: 15px;
 }
@@ -198,7 +213,6 @@ th, td{
     margin-right: 15px;
     font-size: medium;
     outline: none;
-    .content .text input
 }
 
 .content .text input:focus{
@@ -262,4 +276,3 @@ footer .general-footer i{
 footer .general-footer .social .icons{
     padding-top: 15px;
 }
-

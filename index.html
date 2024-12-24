@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/brasao_fortaleza.png">
     <script src="https://kit.fontawesome.com/a264ca8e95.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header>
@@ -110,10 +111,17 @@
                 <h1>Calculadora de IMC</h1>
                 <hr>
                 <form action="#">
-                    <input type="text" name="peso" id="peso" maxlength="4" placeholder="Peso (Kg)" required>
-                    <input type="text" name="altura" id="altura" maxlength="4" placeholder="Altura (m)" required>
-                    <button type="submit">Calcular</button>
+                    <input type="text" name="peso" id="peso" oninput="formatInputWeight(this)" maxlength="5" placeholder="Peso (Kg)" required>
+                    <input type="text" name="altura" id="altura" oninput="formatInput(this)" maxlength="4" placeholder="Altura (m)" required>
+                    <button type="button" onclick="calcularIMC()">Calcular</button>
                 </form>
+                <div class="result">
+                    <h2>Seu IMC é: <span id="IMCNumber" style="font-size: 200%; color: #008090;"> </span></h2>
+                </div>
+
+                <div class="result-images">
+                    <div class="obesidade3"></div>
+                </div>
             </div>
         </section>
     </main>
