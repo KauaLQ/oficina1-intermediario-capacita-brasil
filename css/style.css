@@ -175,6 +175,26 @@ body main{
     transform: scale(1);
 }
 
+.content .text .result-images{
+    display: flex;
+}
+
+.content .text .result-images .component{
+    width: 200px;
+    margin-top: 30px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+    padding: 10px;
+}
+
+.content .text .result-images .component.stylized{
+    border: solid 2px red;
+}
+
+.content .text .result-images .component p{
+    font-size: small;
+}
+
 .topic-table{
     margin-bottom: 15px;
 }
