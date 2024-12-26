@@ -88,6 +88,25 @@ header .menu li:hover{
 	background-color: #199B91;
 }
 
+header .menu li  ul{
+    position:absolute;
+    width: 90%;
+    left: 5%;
+    margin-top: 15px;
+    text-align: center;
+    z-index: 100;
+    background-color: #199B91;
+    display:none;
+}
+
+.menu li:hover ul, .menu li.over ul{display:flex;}
+
+header .menu li ul li{
+    font-size: 15px;
+    padding: 15px 0 15px 0;
+    width:100%;
+}
+
 header .menu a {
 	color: #fff;
 	text-decoration: none;
