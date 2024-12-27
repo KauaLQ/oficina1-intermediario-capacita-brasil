@@ -398,6 +398,10 @@ footer .general-footer .social .icons{
     footer .general-footer{
         display: block;
     }
+    footer .general-footer .location p{
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
     footer .general-footer .location, .social{
         margin-left: 0%;
     }
@@ -410,5 +414,48 @@ footer .general-footer .social .icons{
     
     header .menu-responsive{
         display: flex;
+    }
+}
+
+@media (max-width: 608px) {
+    .content .text input{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    table{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 475px) {
+    header .banner-two{
+        flex-wrap: wrap;
+        height: auto;
+        padding-bottom: 5%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 445px) {
+    header .banner-one{
+        justify-content: center;
+    }
+
+    header .banner-one p{
+        display: none;
+    }
+
+    header .banner-one form{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 435px) {
+    .content .text h1{
+        margin-top: 30px;
+        font-size: larger;
     }
 }
