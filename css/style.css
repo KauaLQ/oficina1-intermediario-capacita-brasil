@@ -315,3 +315,20 @@ footer .general-footer i{
 footer .general-footer .social .icons{
     padding-top: 15px;
 }
+
+@media (max-width: 1000px) {
+    .content .text .result-images{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 726px) {
+    footer .general-footer{
+        display: block;
+    }
+    footer .general-footer .location, .social{
+        margin-left: 0%;
+    }
+}
