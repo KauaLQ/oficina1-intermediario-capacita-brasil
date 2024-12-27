@@ -16,7 +16,7 @@ header{
     width: 100%;
 }
 
-header .banner-one, .menu{
+header .banner-one, .menu, .menu-responsive{
     display: flex;
     background-color: #64A9A4;
     color: #fff;
@@ -71,7 +71,77 @@ header .menu{
     justify-content: center;
 }
 
-header .menu ul {
+header .menu-responsive{
+    justify-content: left;
+    display: none;
+}
+
+header .menu-responsive ul{
+    text-align: center;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+header .menu-responsive .li-father{
+    padding: 15px;
+}
+
+header .menu-responsive .less{
+    width: 300px;
+}
+
+header .menu-responsive .li-father:hover{
+	background-color: #199B91;
+}
+
+header .menu-responsive a {
+	color: #fff;
+	text-decoration: none;
+}
+
+header .menu-responsive li .ul-main{
+    position:absolute;
+    margin-top: 15px;
+    text-align: left;
+    z-index: 100;
+    background-color: #199B91;
+    display:none;
+}
+
+header .menu-responsive li ul li  ul{
+    position:relative;
+    margin-top: 15px;
+    padding: 15px;
+    text-align: left;
+    z-index: 100;
+    background-color: #E9F4F3;
+    display:none;
+}
+
+header .menu-responsive .ul-child{
+    padding: 0%;
+    
+}
+
+header .menu-responsive .ul-child li{
+    border-bottom: 1px solid #008090;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 15px;
+}
+
+header .menu-responsive .ul-child a{
+	color: #757575;
+    font-size: small;
+}
+
+.menu-responsive li:hover .ul-main, .menu-responsive li.over .ul-main{display:block;}
+
+.menu-responsive .hospital:hover .ul-child, .menu-responsive .hospital.over .ul-child{display:block;}
+
+header .menu ul{
     text-align: center;
 	list-style: none;
 	padding: 0;
@@ -84,7 +154,7 @@ header .menu li {
     padding: 15px;
 }
 
-header .menu li:hover{
+header .menu .li-father:hover{
 	background-color: #199B91;
 }
 
@@ -330,5 +400,15 @@ footer .general-footer .social .icons{
     }
     footer .general-footer .location, .social{
         margin-left: 0%;
+    }
+}
+
+@media (max-width: 675px) {
+    header .menu{
+        display: none;
+    }
+    
+    header .menu-responsive{
+        display: flex;
     }
 }
